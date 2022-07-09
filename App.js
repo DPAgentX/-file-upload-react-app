@@ -61,9 +61,9 @@ async function uploadFiles(req, res) {
 
 }
 app.post("/upload", upload.array("files"), uploadFiles);
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./Client/build", "index.html"))
-})
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "./Client/build", "index.html"))
+// })
 app.use('/', indexRouter);
 const port = process.env.PORT
 app.listen(port);
