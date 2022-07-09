@@ -55,7 +55,7 @@ async function uploadFiles(req, res) {
     }
     catch (e) {
         console.error(e)
-        res.redirect('/');
+        res.json({ Error: 'some error occured' });
     }
 
 
