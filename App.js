@@ -50,6 +50,7 @@ async function uploadFiles(req, res) {
             path: fileToUpload.path
         });
         await file.save();
+        res.status(400);
         res.json({ result: result, message: "Successfully uploaded file" });
     }
     catch (e) {
