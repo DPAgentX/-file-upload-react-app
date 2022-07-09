@@ -42,8 +42,8 @@ app.use(express.urlencoded({ extended: true }));
 async function uploadFiles(req, res) {
     try {
         const fileToUpload = req.files[req.files.length - 1];
-        const result = await s3Upload(fileToUpload);
-        console.log(result);
+        // const result = await s3Upload(fileToUpload);
+        // console.log(result);
         const file = new File({
             originalFileName: fileToUpload.originalname,
             fileType: fileToUpload.mimetype,
@@ -51,7 +51,7 @@ async function uploadFiles(req, res) {
         });
         await file.save();
         res.status(200);
-        res.json({ result: result, message: "Successfully uploaded file" });
+        res.json({ result: file, message: "Successfully uploaded file" });
     }
     catch (e) {
         console.error(e)
