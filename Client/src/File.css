@@ -1,0 +1,32 @@
+.fileMainContainer{
+    color: aliceblue;
+}
+.fileMainContainer h6{
+    margin:0.5rem;
+}
+.progressContainer{ 
+    width: 600px; 
+    height: 20px; 
+    background-color: transparent;
+    border: 2px solid turquoise;
+    border-radius:  5px;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.progressBar{
+    background-color: turquoise;
+    height:100%;
+    transition: all 0.2s;
+}
+.span{
+    display: inline-block;
+    font-size: 1.0rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+.App{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    background-color: #292c35;
+    font-size: 2rem;
+}
+button{
+    color:  aquamarine;
+    font-size: 1.5rem;
+}
